@@ -6,7 +6,7 @@ void ofApp::setup(){
     yPos = ofRandom(ofGetHeight());
     xSpeed = 15;
     ySpeed = 15;
-    text = "Welcome to Advanced Programming";
+    text = "It's me Mario!";
 
 }
 
@@ -27,6 +27,7 @@ void ofApp::draw(){
     ofDrawBitmapString(xPos, ofGetWidth()/2, ofGetHeight()/2);
     ofDrawBitmapString(yPos, ofGetWidth()/2, ofGetHeight()/2 + 25);
     ofDrawBitmapString(text, xPos,yPos);
+
 }
 
 //--------------------------------------------------------------
