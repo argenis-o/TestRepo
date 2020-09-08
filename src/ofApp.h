@@ -21,6 +21,7 @@ class ofApp : public ofBaseApp{
 		void gotMessage(ofMessage msg);
 
 	ofSoundPlayer star_sound;
+	ofImage Mario_Star;
 	
 	private:
 		string text;

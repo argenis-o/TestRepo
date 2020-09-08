@@ -4,9 +4,10 @@
 void ofApp::setup(){
     xPos = ofRandom(ofGetWidth());
     yPos = ofRandom(ofGetHeight());
-    xSpeed = 15;
-    ySpeed = 15;
-    text = "It's me Mario!";
+    xSpeed = 8;
+    ySpeed = 8;
+    text = "It's a me Mario!";
+    Mario_Star.load("Mario_Star.png");
 
     star_sound.load("star_sound.mp3");
     star_sound.play();
@@ -27,9 +28,11 @@ void ofApp::update(){
 
 //--------------------------------------------------------------
 void ofApp::draw(){
+    
     ofDrawBitmapString(xPos, ofGetWidth()/2, ofGetHeight()/2);
     ofDrawBitmapString(yPos, ofGetWidth()/2, ofGetHeight()/2 + 25);
     ofDrawBitmapString(text, xPos,yPos);
+    Mario_Star.draw(xPos, yPos, 150, 150);
 
 }
 
