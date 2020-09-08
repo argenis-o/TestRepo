@@ -8,6 +8,9 @@ void ofApp::setup(){
     ySpeed = 15;
     text = "It's me Mario!";
 
+    star_sound.load("star_sound.mp3");
+    star_sound.play();
+
 }
 
 //--------------------------------------------------------------
@@ -32,7 +35,9 @@ void ofApp::draw(){
 
 //--------------------------------------------------------------
 void ofApp::keyPressed(int key){
-
+    if(key == 'p'){
+        star_sound.play();
+    }
 }
 
 //--------------------------------------------------------------
